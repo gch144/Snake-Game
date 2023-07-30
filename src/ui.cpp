@@ -25,5 +25,5 @@ void paint_border(){
     }
     
     
-    getch();
+    // getch();
 }
