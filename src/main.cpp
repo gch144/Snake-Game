@@ -1,6 +1,20 @@
 #include<iostream>
+#include<curses.h>
+#include "ui.h"
 
+void event_lod(){
+    while (true){
+        
+
+    }
+    
+}
 int main(){
-    std::cout<<"Hello world \n";
+
+    int_ui();
+    tear_down_ui();
+    paint_border();
+    
+    return 0;
     
 }
