@@ -2,14 +2,28 @@
 #include<curses.h>
 #include "ui.h"
 #include "game.h"
+#include<chrono>
+#include "settings_constants.h"
 
 void event_loop(){
     while (true){
+        auto last_time=std::chrono::system_clock::now();
+        int dt;// time diffrence
         erase();
         game_logic();
-        getch();
+        // getch();
         refresh();
-        // sleep(100);//sleep for 100 ms
+        do//use because for dt inasliztion
+        {
+                auto current_time=std::chrono::system_clock::now();
+                dt=std::chrono::duration_cast<std::chrono::microseconds>(current_time-last_time).count();
+            
+        }while (dt<Time_DELAY_BETWEEN_FRAMS);
+        
+       
+
+        
+
         
 
     }

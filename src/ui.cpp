@@ -3,6 +3,7 @@
 char border_charcter=219;
 void int_ui(){
  initscr();
+ nodelay(stdscr,TRUE);
 }
 void tear_down_ui(){
     endwin();
