@@ -9,7 +9,7 @@ void event_loop(){
         game_logic();
         getch();
         refresh();
-        sleep(100);//sleep for 100 ms
+        // sleep(100);//sleep for 100 ms
         
 
     }
