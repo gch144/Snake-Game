@@ -3,10 +3,12 @@
 #define DEF_SNAKE
 // #include<iostream>
 #include <vector>
-#include<curses.h>
+#include <curses.h>
 #include "settings_constants.h"
 void init_snake();
 void paint_snake();
-void move_snake(int direction);
+std::pair<int, int> move_snake(int direction);
+void grow_snake();
+bool has_collision();
 
 #endif
