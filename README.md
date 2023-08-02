@@ -46,3 +46,4 @@ g++ main.cpp ui.cpp game.cpp snake.cpp food.cpp -lncurses -o logic && ./logic
 This game is created as a simple project for learning C++ and the `ncurses` library. It's inspired by the classic Snake game.
 
 Feel free to modify and improve the game according to your needs and creativity. Happy coding!
+![image](https://github.com/gch144/Snake-Game/assets/64479565/444028c0-0125-40e2-a2f2-aaf3d1ced671)
